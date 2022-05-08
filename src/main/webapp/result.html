@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+
+
+<script>
+
+
+
+    var contenedor=document.getElementById("imagen");
+    var xx = parent.location.href;
+    var xx = xx.toUpperCase();
+    if (xx.indexOf('INDEX.ASP')!=-1){
+
+
+
+        contenedor.src=getPath("/assets/img/")+"git.jpg";
+
+
+    }else{
+        contenedor.src=context.getPath("/assets/img/")+"git.jpg";
+        console.log(context.getDirectory())
+    }
+</script>
+
+
+<img id="imagen" width=168 height=66>
+
+
+</body>
+</html>
